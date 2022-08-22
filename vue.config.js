@@ -1,21 +1,14 @@
-/*
- * @Author: Hzh
- * @Date: 2021-04-22 18:16:41
- * @LastEditTime: 2021-04-23 15:54:51
- * @LastEditors: Hzh
- * @Description:
- */
 'use strict'
 const path = require('path')
 function resolve (dir) {
   return path.join(__dirname, dir)
 }
 
-const port = 8033 // 端口配置
+const port = 8036 // 端口配置
 const { name } = require('./package')
 
 module.exports = {
-  // hash 模式下可使用
+  // hash 模式下可使用36
   publicPath: process.env.NODE_ENV === 'development' ? '/' : '/qiankun-base/',
   outputDir: 'dist',
   assetsDir: 'static',
@@ -58,6 +51,6 @@ module.exports = {
       library: `${name}-[name]`,
       libraryTarget: 'umd',
       jsonpFunction: `webpackJsonp_${name}`
-    }
+    },
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <div class="a">
-    <h1>这是组件A-0</h1>
+    <h1>这是组件A-00000000</h1>
   </div>
 </template>
 
